@@ -1,7 +1,9 @@
 <template>
-  <div class="unordered-list">
+  <div>
     <h1>{{ title }}</h1>
-    <li v-for="book in books">{{book.title}}:{{book.author}}</li>
+    <ul>
+      <li v-for="book in books">{{book.title}}:{{book.author}}</li>
+    </ul>
   </div>
 </template
 >
@@ -27,7 +29,7 @@ h1,
 h2 {
   font-weight: normal;
 }
-.unordered-list {
+ul {
   list-style-type: none;
   padding: 0;
 }
